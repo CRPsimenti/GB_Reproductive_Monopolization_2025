@@ -1,6 +1,6 @@
-# GB_Reproductive_Monopolization_2025
-Replication package for Reproductive monopolization paper. Analyzing long-term data on wild Guinea baboons to investigate paternity success, reproductive skew, and the effect of age and rank on reproductive success.
+# Replication package: *Male monopolization and reproductive skew in a tolerant multilevel society*
 
+Analyzing long-term data on wild Guinea baboons to investigate paternity success, reproductive skew, and the effect of age and rank on reproductive success.
 
 
 The major requirement for our code to run is a working `cmdstanr`/`Stan` setup.
@@ -16,10 +16,15 @@ Also, some of our plotting code requires an additional package `viridisLite`.
 In order to get the code to work, we need to unpack the replication package into our working directory.
 If we then run the following code, we should obtain a `TRUE`:
 
-`file.exists("replication_pack/stan_models/rs_model.stan")`
+`file.exists("stan_models/rs_model.stan")`
 
 If that works, we can proceed to the actual scripts.
 
+## Note on reproducibility
+
+Exact reproducibility is hard to achieve using Stan (see [here](https://mc-stan.org/docs/reference-manual/reproducibility.html) for details).
+Nevertheless, we used fixed seeds for R's and Stan's random number generators throughout in an attempt to minimize discrepancies over different computer setups.
+For example, the numeric values in table 1 were within a range of $\pm0.09$ over several runs on different machines and for table 2 they were within a range of $\pm0.03$ over several runs.
 
 ## Reproductive success models
 
@@ -38,9 +43,9 @@ Script 03 contains code for data preparation and fitting of the reproductive ske
   
   - `01_prior_simulation.R`: prior simulations for our reproductive success model
   
-  - `02_models.R`: actual reproductive success model
+  - `02_models.R`: actual reproductive success model (incl figures)
   
-  - `03_skew.R`: data processing and models for skew analysis
+  - `03_skew.R`: data processing and models for skew analysis (incl figures)
 
 ## Data files
 
