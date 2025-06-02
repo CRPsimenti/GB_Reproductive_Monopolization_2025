@@ -1,5 +1,6 @@
-# GB_Reproductive_Monopolization_2025
-Replication package for Reproductive monopolization paper. Analyzing long-term data on wild Guinea baboons to investigate paternity success, reproductive skew, and the effect of age and rank on reproductive success.
+# Replication package: *Male monopolization and reproductive skew in a tolerant multilevel society*
+
+Analyzing long-term data on wild Guinea baboons to investigate paternity success, reproductive skew, and the effect of age and rank on reproductive success.
 
 
 
