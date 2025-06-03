@@ -1,5 +1,7 @@
 # Replication package: *Male monopolization and reproductive skew in a tolerant multilevel society*
 
+[![DOI](https://zenodo.org/badge/991280096.svg)](https://doi.org/10.5281/zenodo.15582801)
+
 Analyzing long-term data on wild Guinea baboons to investigate paternity success, reproductive skew, and the effect of age and rank on reproductive success.
 
 
