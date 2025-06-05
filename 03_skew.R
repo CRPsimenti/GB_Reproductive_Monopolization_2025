@@ -80,14 +80,20 @@ plot(0, 0, xlim = c(-2, 5), ylim = c(0, 0.8), yaxs = "i", type = "n", axes = FAL
 abline(v = 0, lty = 3, col = "grey")
 axis(1)
 box(bty = "l")
-polygon(p5d, border = NA, col = adjustcolor("red", 0.2))
-segments(median(p5), 0, median(p5), p5d$y[which.min(abs(p5d$x - median(p5)))], col = "red", lwd = 2)
-polygon(p6d, border = NA, col = adjustcolor("blue", 0.2))
-segments(median(p6), 0, median(p6), p6d$y[which.min(abs(p6d$x - median(p6)))], col = "blue", lwd = 2)
-polygon(p9d, border = NA, col = adjustcolor("black", 0.2))
-segments(median(p9), 0, median(p9), p9d$y[which.min(abs(p9d$x - median(p9)))], col = "black", lwd = 2)
+polygon(p5d, border = grey(0), lwd = 0.5, col = adjustcolor("red", 0.4))
+polygon(p6d, border = grey(0), lwd = 0.5, col = adjustcolor("blue", 0.4))
+polygon(p9d, border = grey(0), lwd = 0.5, col = adjustcolor("black", 0.4))
+points(c(0.4, 1.5), c(0.65, 0.7), type = "l")
+text(1.6, 0.7, "party 5", adj = 0)
+points(c(1.3, 2.0), c(0.23, 0.3), type = "l")
+text(2.1, 0.3, "party 6", adj = 0)
+points(c(-0.8, -1.2), c(0.15, 0.2), type = "l")
+text(-1.2, 0.23, "party 9", adj = 0.5)
+segments(median(p5), 0, median(p5), p5d$y[which.min(abs(p5d$x - median(p5)))], col = "red", lwd = 3)
+segments(median(p6), 0, median(p6), p6d$y[which.min(abs(p6d$x - median(p6)))], col = "blue", lwd = 3)
+segments(median(p9), 0, median(p9), p9d$y[which.min(abs(p9d$x - median(p9)))], col = "black", lwd = 3)
 
-legend("topright", col = c("red", "blue", "black"), lty = 1, legend = c(5, 6, 9), bty = "n")
+# legend("topright", col = c("red", "blue", "black"), lty = 1, legend = c(5, 6, 9), bty = "n")
 
 
 
