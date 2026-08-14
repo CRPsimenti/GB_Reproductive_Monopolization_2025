@@ -1,6 +1,6 @@
 source("helpers/make_skew_data.R")
-# requires SkewCalc package further down for supplem. analyses
-# (from https://github.com/ctross/SkewCalc)
+# requires SkewCalc package further down for suppl. analyses
+# from https://github.com/ctross/SkewCalc
 
 
 # data prep ----
@@ -99,7 +99,9 @@ segments(median(p9), 0, median(p9), p9d$y[which.min(abs(p9d$x - median(p9)))], c
 
 # supplements -----
 
+
 ## PP check ----
+# figure S2
 
 par(mfrow = c(1, 3), family = "serif", las = 1)
 set.seed(1)
@@ -138,8 +140,10 @@ for (i in 1:3) {
 }
 
 
-## comparison of original stan model with our adaptation using SkewCalc package data ----
-
+ 
+## comparison of original Stan model with our custom adaptation (using SkewCalc package *data*) ----
+# figure S1
+  
 # we need the original implementation for validation purposes 
 skewmod_ori <- cmdstanr::cmdstan_model("stan_models/mindex_original.stan")
 

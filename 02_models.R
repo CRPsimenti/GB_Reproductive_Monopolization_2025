@@ -19,8 +19,9 @@ m$check_syntax(pedantic = TRUE)
 
 # read results instead of refitting
 r <- readRDS("results/finalmodel.rds")
-
-
+# if this fails, it means you need to run the model first (see section just above)
+#  we don't include the .rds files in the repository as they are binary files 
+#  and their content can easily be restored by running the model again
 
 # table A5 (numeric model results) ----
 xvars <- c("intercept", "elo_slope", "ageclass_slope", "ageclass_elo_interaction")
@@ -87,7 +88,7 @@ text(2.37, 0.45, "non-prime-\naged", col = "#443A83FF", adj = 0, font = 2, cex =
 
 
 
-## figure SUPP X ----
+## figure S6 ----
 # as figure 3, but split by party
 
 set.seed(42)
@@ -101,14 +102,14 @@ rs_plot(model_env = r, standat = standat, target_party = "sixw", n_samples = 50,
 par(mfrow = c(1, 1))
 
 ## PP checks ----
-# A4
+# figure S4
 set.seed(42)
 par(mfrow = c(1, 3))
 pp_foo(model_env = r, standat = standat, split_by_age = FALSE, ytop = 100, ignore_setpar = TRUE)
 pp_foo(model_env = r, standat = standat, split_by_age = TRUE, ytop = 70, ignore_setpar = TRUE)
 par(mfrow = c(1, 1))
 
-# A5
+# figure S5
 set.seed(42)
 par(family = "serif", mgp = c(1.5, 0.5, 0), las = 1, mar = c(3, 3, 1, 1), tcl = 0)
 par(mfrow = c(1, 2))

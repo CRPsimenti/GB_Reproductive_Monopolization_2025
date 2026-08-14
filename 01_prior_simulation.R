@@ -15,7 +15,7 @@ r <- m$sample(data = standat, parallel_chains = 4, refresh = 100, show_exception
 # store results
 # r$save_object("results/finalmodel_priors.rds")
 
-# plot in the supplement (figure A3)
+# plot in the supplement (figure S3)
 set.seed(42)
 rs_plot(model_env = r, standat = standat, target_party = NULL, n_samples = 50, 
         ylims = c(0, 6), xlims = c(-3, 3), prior_only = TRUE)
