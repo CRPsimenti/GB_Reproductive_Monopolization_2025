@@ -1,14 +1,12 @@
-# Replication package: *Male monopolization and reproductive skew in a tolerant multilevel society*
+# Replication package: *Nested Male Reproductive Strategies in a Tolerant Multilevel Primate Society*
 
 [![DOI](https://zenodo.org/badge/991280096.svg)](https://doi.org/10.5281/zenodo.15582801)
 
-Published in: . . . 
+Authors: Federica Dal Pesco; Christof Neumann; Franziska Trede; Dietmar Zinner; Julia Fischer
 
-DOI: . . .
+Published in: Proceedings of the Royal Society Biological Sciences
 
-Date: 2026-08-14
-
-
+DOI: pending
 
 Analyzing long-term data on wild Guinea baboons to investigate paternity success, reproductive skew, and the effect of age and rank on reproductive success.
 
