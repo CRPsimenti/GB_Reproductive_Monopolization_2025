@@ -4,9 +4,9 @@
 
 Authors: Federica Dal Pesco; Christof Neumann; Franziska Trede; Dietmar Zinner; Julia Fischer
 
-Published in: Proceedings of the Royal Society Biological Sciences
+Published in: Proceedings of the Royal Society B (biological sciences)
 
-DOI: pending
+DOI: 10.1098/rspb.2026.0955
 
 Analyzing long-term data on wild Guinea baboons to investigate paternity success, reproductive skew, and the effect of age and rank on reproductive success.
 
